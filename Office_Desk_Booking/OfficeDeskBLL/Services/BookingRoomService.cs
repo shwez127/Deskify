@@ -34,13 +34,10 @@ namespace OfficeDeskBLL.Services
             return _roomRepository.GetRoomById(roomId);
         }
         //get rooms
-        public IEnumerable<BookingRoom> GetRoom()
+        public IEnumerable<BookingRoom> GetBookingRoom()
         {
             return _roomRepository.GetBookingRoom();
         }
-        public void UpdateRoom(object bookingRooms)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

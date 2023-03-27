@@ -37,7 +37,7 @@ namespace OfficeDeskBLL.Services
             return _seatRepository.GetBookingSeatId(seatId);
         }
 
-        public IEnumerable<BookingSeat> GetAllSeat()
+        public IEnumerable<BookingSeat> GetAllSeats()
         {
             return _seatRepository.GetAllSeats();
         }

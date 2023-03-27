@@ -38,7 +38,6 @@ namespace OfficeDeskDAL.Repository
 
         #endregion
 
-
         #region GET FLOOR
 
         public IEnumerable<Floor> GetFloor()

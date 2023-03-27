@@ -16,7 +16,7 @@ namespace OfficeDeskBLL.Services
             _qScannerRepository = qScannerRepository;
         }
 
-        #region Serice for AddQScanner
+        #region Service for AddQScanner
 
         public void AddQScanner(QRScanner qScanner)
         {
@@ -24,7 +24,7 @@ namespace OfficeDeskBLL.Services
         }
         #endregion Serice for AddQScanner
 
-        #region Serice for UpdateQScanner
+        #region Service for UpdateQScanner
 
         public void UpdateQScanner(QRScanner qScanner)
         {
@@ -32,7 +32,7 @@ namespace OfficeDeskBLL.Services
         }
         #endregion Serice for UpdateQScanner
 
-        #region Serice for DeleteQScanner
+        #region Service for DeleteQScanner
 
         public void DeleteQScanner(int qScannerId)
         {
@@ -40,7 +40,7 @@ namespace OfficeDeskBLL.Services
         }
         #endregion Serice for AddQScanner
 
-        #region Serice for GetQScannerById
+        #region Service for GetQScannerById
 
         public QRScanner GetQScannerById(int qScannerId)
         {
@@ -48,7 +48,7 @@ namespace OfficeDeskBLL.Services
         }
         #endregion Serice for GetQScannerById
 
-        #region Serice for GetQScanner
+        #region Service for GetQScanner
 
         public IEnumerable<QRScanner> GetQScanner()
         {
