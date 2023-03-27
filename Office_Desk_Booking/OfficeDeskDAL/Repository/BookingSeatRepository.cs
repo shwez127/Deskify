@@ -16,6 +16,7 @@ namespace OfficeDeskDAL.Repository
         {
             _db = db;
         }
+
         #region AddBookingSeat
         public void AddSeat(BookingSeat seat)
         {
@@ -32,7 +33,7 @@ namespace OfficeDeskDAL.Repository
             _db.SaveChanges();
 
         }
-        #endregion DeleteBookingSeat
+        #endregion
 
         #region  UpdateSeat
         public void UpdateSeat(BookingSeat seat)
@@ -42,7 +43,6 @@ namespace OfficeDeskDAL.Repository
 
         }
         #endregion UpdateSeat
-
 
         #region GetSeatById 
         public BookingSeat GetBookingSeatId(int seatId)
@@ -54,7 +54,7 @@ namespace OfficeDeskDAL.Repository
         #region GetAllSeats
         public IEnumerable<BookingSeat> GetAllSeats()
         {
-            return _db.bookingSeats;
+            return _db.bookingSeats.ToList();
         }
         #endregion GetAllSeats
     }

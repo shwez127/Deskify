@@ -11,7 +11,6 @@ namespace OfficeDeskDAL.Repository
     {
         void AddRoom(BookingRoom room);
         void UpdateRoom(BookingRoom room);
-        void DeleteRoom(BookingRoom room);
         void DeleteRoom(int roomId);
         BookingRoom GetRoomById(int roomId);
         IEnumerable<BookingRoom> GetBookingRoom();

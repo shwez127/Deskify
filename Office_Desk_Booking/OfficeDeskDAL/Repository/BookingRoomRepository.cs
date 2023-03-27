@@ -36,7 +36,7 @@ namespace OfficeDeskDAL.Repository
         {
             return _db.bookingRooms.Find(roomId);
         }
-#endregion     
+        #endregion     
 
         #region UPDATE ROOM
         public void UpdateRoom(BookingRoom room)
@@ -44,7 +44,7 @@ namespace OfficeDeskDAL.Repository
             _db.Entry(room).State = EntityState.Modified;
             _db.SaveChanges(); ;
         }
-#endregion       
+        #endregion       
 
         #region DELETE ROOM
         public void DeleteRoom(int roomId)
@@ -53,13 +53,7 @@ namespace OfficeDeskDAL.Repository
             _db.bookingRooms.Remove(rooms);
             _db.SaveChanges();
         }
-#endregion       
+        #endregion
 
-        #region DELETE ROOM
-        public void DeleteRoom(BookingRoom room)
-        {
-            throw new NotImplementedException();
-        }
-#endregion
     }
 }

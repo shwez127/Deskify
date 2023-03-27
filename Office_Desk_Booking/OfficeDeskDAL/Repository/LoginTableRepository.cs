@@ -34,7 +34,7 @@ namespace OfficeDeskDAL.Repository
             int[] arr = { -1, 4 };
             List<LoginTable> LoginLists = _db.LoginTables.ToList();
             var TotalList = from v in LoginLists select v;
-            if (loginTable.Email == "Nawaz@gmail.com" && loginTable.Password == "nawaz123")
+            if (loginTable.Email == "deskify@gmail.com" && loginTable.Password == "deskify123")
             {
                 arr[1] = 3;
                 return arr;
@@ -74,11 +74,9 @@ namespace OfficeDeskDAL.Repository
 
         }
         public void UpdatePassword(LoginTable login)
-        {
-            #region Updating Patient Details in Database
+        {          
             _db.Entry(login).State = EntityState.Modified;
             _db.SaveChanges();
-            #endregion
         }
     }
 }
